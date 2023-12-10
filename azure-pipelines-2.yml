@@ -7,7 +7,7 @@ trigger:
 - master
 
 pool:
-- task: AzureWebApp@1
+ task: AzureWebApp@1
   inputs:
     azureSubscription: 'Azure Pass - Sponsorship(fd983f73-5e6b-467b-ae2f-299e747e74d0)'
     appType: 'webApp'
