@@ -9,12 +9,7 @@ trigger:
 pool:
  task: AzureWebApp@1
   
-   package: '$(System.DefaultWorkingDirectory)/**/*.zip'
-    deploymentMethod: 'auto'
-  vmImage: ubuntu-latest
-
-variables:
-  buildConfiguration: 'Release'
+ 
 
 steps:
 - script: dotnet build --configuration $(buildConfiguration)
