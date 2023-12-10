@@ -9,8 +9,7 @@ trigger:
 pool:
  task: AzureWebApp@1
   
-        appName: Demo-PN
-    package: '$(System.DefaultWorkingDirectory)/**/*.zip'
+   package: '$(System.DefaultWorkingDirectory)/**/*.zip'
     deploymentMethod: 'auto'
   vmImage: ubuntu-latest
 
